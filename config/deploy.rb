@@ -19,6 +19,5 @@ desc "Deploys the current version to the server."
 task :deploy => :environment do
   deploy do
     invoke :'git:clone'
-    invoke :'bundle:install'
   end
 end
