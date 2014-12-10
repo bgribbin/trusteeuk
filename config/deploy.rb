@@ -4,11 +4,11 @@ require 'mina/git'
 require 'mina/rvm'  
 
 set :term_mode, nil
-set :domain, 'fergieshairdryer.com'
-set :deploy_to, '/var/www/fergieshairdryer.com/html'
+set :domain, 'trustee.uk.com'
+set :deploy_to, '/var/www/trustee.uk.com/html'
 set :user, 'deployer'
 set :ssh_options, '-A'
-set :repository, 'https://github.com/bgribbin/ferg3.git'
+set :repository, 'https://github.com/bgribbin/trusteeuk.git'
 set :branch, 'master'
 
 task :environment do
@@ -20,6 +20,5 @@ task :deploy => :environment do
   deploy do
     invoke :'git:clone'
     invoke :'bundle:install'
-    queue "#{bundle_prefix} jekyll build"
   end
 end
