@@ -1,3 +1,5 @@
+@import 'foundation.css';
+
 /* reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,top-nav,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, top-nav, nav, section {display: block;}
@@ -46,6 +48,12 @@ body{
 		border-radius: 12px;
 		color: #EA5B0C;
 }
+.contact-deets a:hover {
+		background-color: #EA5B0C;
+		color: white;
+
+}
+
 .contact-address {
 	margin-top: 2rem;
 	color: white;
@@ -162,6 +170,7 @@ img { border: 0; max-width: 100%; }
   color: #fff;
   padding: 0.7em 1em;
   font-weight: 400;
+  border-radius: 2em;
  -webkit-transition: all 0.3s ease-out;
  -moz-transition: all 0.3s ease-out;
  -ms-transition: all 0.3s ease-out;
@@ -170,11 +179,13 @@ img { border: 0; max-width: 100%; }
 }
 #topnav nav ul li a:hover {
   color:white;
-  background: rgba(57, 59, 58, 0.65);
+  border-radius: 2em;
+  background: rgba(0, 0, 0, 0.1);
 }
 #topnav nav ul li.active>a {
   color:white;
-  background: rgba(57, 59, 58, 0.65); 
+  border-radius: 2em;
+  background: rgba(0, 0, 0, 0.1); 
 
 }
 /* footer block */
@@ -250,7 +261,8 @@ img { border: 0; max-width: 100%; }
 .title h1 {
 	text-align: center;
 	font-size: 3rem;
-	color: white
+	color: white;
+	padding: 0.5em;
 }
 .title p {
 	color: white;
@@ -267,9 +279,61 @@ img { border: 0; max-width: 100%; }
 /*---End-top-header----*/
 /*  GRID OF One   =========================================== */
 #team {
+	/*background: #fff;*/
+	/*padding:2em 0;*/
+}
+#wwd {
 	background: #fff;
 	padding:2em 0;
 }
+
+.team {
+	text-align: center;
+}
+
+.team .title h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+
+}
+.team-title {
+	background-color: orange;
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+.team-title h1 {
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+}
+.team_bio {
+	padding: 1.5em;
+}
+.team_bio h1 {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+.team_bio ul li {
+	list-style: initial;
+	text-align: left;
+	margin-bottom: 0.5em;
+	text-align: justify;
+
+}
+ul.bio {
+	margin: 1em;
+
+}
+
+img.profile {
+
+	margin-top: 2.5em; 
+	margin-bottom: 1.5em;
+	height: 200px;
+}
+
 .col_1_of_1{
 	display: block;
 	text-align: center;
@@ -472,6 +536,7 @@ form input[type="submit"]:hover{
   display: block;
   float:left;
   margin:0em 0.5em; 
+  border-radius: 2em;
 }
 .footer-right ul li a {
 	 display: block;
@@ -479,6 +544,7 @@ form input[type="submit"]:hover{
 	  color:#272727;
 	  padding: 0.7em 1em;
 	  font-weight:600;
+	  border-radius: 2em;
 	 -webkit-transition: all 0.3s ease-out;
 	 -moz-transition: all 0.3s ease-out;
 	 -ms-transition: all 0.3s ease-out;
@@ -486,7 +552,7 @@ form input[type="submit"]:hover{
 	 transition: all 0.3s ease-out;
 }
 .footer-right ul li a:hover{
-	color:#73A1AD;
+	color:#EA5B0C;
 	background: #393B3A;
 }
 /*end-footer**/
